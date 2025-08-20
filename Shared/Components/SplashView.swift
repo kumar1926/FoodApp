@@ -14,7 +14,7 @@ struct SplashView: View {
             Image("Logo")
                 .resizable()
                 .frame(width: 200, height: 150)
-                .opacity(fadeInOut ? 1.0 : 0.2) // animate between 20% and 100%
+                .opacity(fadeInOut ? 1.0 : 0.2)
                 .animation(.easeInOut(duration: 1.3).repeatForever(autoreverses: true),value: fadeInOut)
         }
         .onAppear{

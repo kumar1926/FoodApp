@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BE967132E54E32C007763AE /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE967122E54E32C007763AE /* ColorExtensions.swift */; };
 		5C9E43132E544F0400E440F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9E43122E544F0400E440F7 /* Assets.xcassets */; };
 		5C9E433F2E54579400E440F7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E433E2E54579400E440F7 /* SplashView.swift */; };
 		5C9E43512E54764700E440F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E43502E54764700E440F7 /* LoginView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BE967122E54E32C007763AE /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		5C9E430B2E544F0300E440F7 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9E43122E544F0400E440F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C9E43182E544F0500E440F7 /* FoodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,12 +83,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BE967102E54E2B8007763AE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BE967112E54E2CB007763AE /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2BE967112E54E2CB007763AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2BE967122E54E32C007763AE /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5C9E43022E544F0300E440F7 = {
 			isa = PBXGroup;
 			children = (
+				2BE967102E54E2B8007763AE /* Core */,
 				5C9E43382E54559700E440F7 /* Shared */,
 				5C9E43372E54556C00E440F7 /* Features */,
-				5C9E43362E54556400E440F7 /* Core */,
 				5C9E43352E54554B00E440F7 /* Resources */,
 				5C9E430D2E544F0300E440F7 /* FoodApp */,
 				5C9E431B2E544F0500E440F7 /* FoodAppTests */,
@@ -111,13 +129,6 @@
 				5C9E43122E544F0400E440F7 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		5C9E43362E54556400E440F7 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		5C9E43372E54556C00E440F7 /* Features */ = {
@@ -147,18 +158,9 @@
 		5C9E434C2E54748E00E440F7 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				5C9E434D2E5474A900E440F7 /* Models */,
 				5C9E434E2E5474B400E440F7 /* View */,
-				5C9E434F2E5474D300E440F7 /* ViewModels */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		5C9E434D2E5474A900E440F7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		5C9E434E2E5474B400E440F7 /* View */ = {
@@ -167,13 +169,6 @@
 				5C9E43502E54764700E440F7 /* LoginView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		5C9E434F2E5474D300E440F7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +318,7 @@
 			files = (
 				5C9E433F2E54579400E440F7 /* SplashView.swift in Sources */,
 				5C9E43512E54764700E440F7 /* LoginView.swift in Sources */,
+				2BE967132E54E32C007763AE /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
