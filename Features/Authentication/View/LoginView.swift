@@ -77,30 +77,29 @@ struct LoginView: View {
                             print("Sign In tapped")
                         }label:{
                             Text("Sign In")
-                                .font(.system(size: 32,weight: .bold,design: .monospaced))
+                                .font(.system(size: 25,weight: .bold,design: .monospaced))
                                 .foregroundStyle(.white)
-                                .frame(maxWidth: .infinity,maxHeight: 30)
+                                .frame(maxWidth: .infinity,maxHeight: 25)
                                 .padding()
                                 .background(Color.init(hex: "#FF7622"))
                                 .cornerRadius(10)
                         }
                         .padding(.top, 20)
                         
-                        HStack{
-                            Text("Don't have account?")
-                                .font(.system(size: 17,weight: .regular,design: .monospaced))
+                        HStack {
+                            Text("Don't have an account?")
+                                .font(.system(size: 17, weight: .regular, design: .monospaced))
                                 .foregroundStyle(Color.gray)
-                            Button{
-                                
-                            }label: {
+                            
+                            NavigationLink(destination: SignUpView()) {
                                 Text("Sign Up")
-                                    .font(.system(size: 17,weight: .regular,design: .monospaced))
+                                    .font(.system(size: 17, weight: .regular, design: .monospaced))
                                     .foregroundStyle(Color.init(hex: "#FF7622"))
                             }
                         }
                         .frame(maxWidth: .infinity)
                         .padding(.horizontal, 20)
-                        .padding(.top,20)
+                        .padding(.top, 20)
                         
                         
                     }
