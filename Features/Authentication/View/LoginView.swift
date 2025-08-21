@@ -16,7 +16,7 @@ struct LoginView: View {
         ZStack{
             Color.init(hex: "#1E1E2E")
                 .ignoresSafeArea()
-            Spacer(minLength: 40)
+            
             VStack(spacing:10){
                 Text("Log In")
                     .font(.system(size: 30, weight: .bold, design: .monospaced))
@@ -26,10 +26,10 @@ struct LoginView: View {
                     .foregroundColor(.white)
                 
                 Spacer(minLength: 40)
-                ZStack(alignment: .leading) {
+                ZStack(alignment: .leading){
                     Color.white
                     
-                    VStack(alignment: .leading, spacing: 10) {
+                    VStack(alignment: .leading, spacing: 15) {
                         Text("Email")
                             .font(.system(size: 14, weight: .bold, design: .monospaced))
                             .foregroundStyle(.secondary)
@@ -62,34 +62,56 @@ struct LoginView: View {
                         .padding(15)
                         .background(Color.init(hex: "#F0F5FA"))
                         .cornerRadius(10)
+                        
                         Button{
                             print("Forgot Password tapped")
                         }label:{
                             Text("Forgot Password")
                                 .font(.system(size: 14,weight: .bold,design: .monospaced))
                                 .foregroundStyle(Color.init(hex: "#FF7622"))
-                                
+                            
                         }
                         .frame(maxWidth:.infinity,alignment: .trailing)
+                        .padding(.top)
                         Button{
                             print("Sign In tapped")
                         }label:{
-                           Text("Sign In")
+                            Text("Sign In")
                                 .font(.system(size: 32,weight: .bold,design: .monospaced))
                                 .foregroundStyle(.white)
-                                
+                                .frame(maxWidth: .infinity,maxHeight: 30)
+                                .padding()
+                                .background(Color.init(hex: "#FF7622"))
+                                .cornerRadius(10)
                         }
-                        .frame(width: 300, height: 50)
-                        .background(Color.init(hex: "#FF7622"))
-                       
+                        .padding(.top, 20)
+                        
+                        HStack{
+                            Text("Don't have account?")
+                                .font(.system(size: 17,weight: .regular,design: .monospaced))
+                                .foregroundStyle(Color.gray)
+                            Button{
+                                
+                            }label: {
+                                Text("Sign Up")
+                                    .font(.system(size: 17,weight: .regular,design: .monospaced))
+                                    .foregroundStyle(Color.init(hex: "#FF7622"))
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, 20)
+                        .padding(.top,20)
+                        
+                        
                     }
+                    .padding(.top,50)
+                    .frame(maxHeight: .infinity, alignment: .init(horizontal: .center, vertical: .top))
                     .padding([.leading, .trailing], 20)
+                    
                 }
                 .cornerRadius(25)
-
-
                 
-            }
+            }.padding(.top,50)
             
         }
     }
