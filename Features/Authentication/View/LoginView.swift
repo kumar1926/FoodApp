@@ -46,11 +46,11 @@ struct LoginView: View {
                                 if isPasswordVisible{
                                     TextField("Enter Password", text: $password)
                                         .font(.system(size: 14,weight: .regular,design: .monospaced))
-                                        .foregroundStyle(.secondary)
+                                        .foregroundStyle(.black)
                                 }else{
                                     SecureField("**********", text: $password)
                                         .font(.system(size: 14,weight: .regular,design: .monospaced))
-                                        .foregroundStyle(.secondary)
+                                        .foregroundStyle(.black)
                                 }
                                 Button(action:{
                                     isPasswordVisible.toggle()
@@ -88,17 +88,17 @@ struct LoginView: View {
                             
                             HStack {
                                 Text("Don't have an account?")
-                                    .font(.system(size: 17, weight: .regular, design: .monospaced))
+                                    .font(.system(size: 14, weight: .regular, design: .monospaced))
                                     .foregroundStyle(Color.gray)
                                 
                                 NavigationLink(destination: SignUpView()) {
                                     Text("Sign Up")
-                                        .font(.system(size: 17, weight: .regular, design: .monospaced))
+                                        .font(.system(size: 14, weight: .regular, design: .monospaced))
                                         .foregroundStyle(Color.init(hex: "#FF7622"))
                                 }
                             }
                             .frame(maxWidth: .infinity)
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 10)
                             .padding(.top, 20)
                             
                             
