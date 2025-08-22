@@ -18,17 +18,6 @@ struct SignUpView: View {
         ZStack(alignment: .topLeading){
             Color.init(hex: "#1E1E2E")
                 .ignoresSafeArea()
-            Button(action: {
-                // back action
-            }) {
-                Image(systemName: "chevron.left")
-                    .resizable()
-                    .frame(width: 08, height: 15)
-                    .foregroundColor(.black)
-                    .background(Circle().fill(Color.white).frame(width: 40, height: 40))
-            }
-            .padding(.leading, 40)
-            .padding(.top, 40)
             
             VStack(spacing:10){
                 Text("Sign Up")
@@ -123,7 +112,7 @@ struct SignUpView: View {
                 
                 
             }
-            .padding(.top,70)
+            .padding(.top,50)
         }
     }
 }
