@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BE967132E54E32C007763AE /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE967122E54E32C007763AE /* ColorExtensions.swift */; };
+		2BE967312E5B3D23007763AE /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE967302E5B3D23007763AE /* CustomAlertView.swift */; };
 		5C2A86CA2E5866BC0055FA9A /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C2A86C92E5866BC0055FA9A /* FirebaseAI */; };
 		5C2A86CC2E5866BC0055FA9A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5C2A86CB2E5866BC0055FA9A /* FirebaseAnalytics */; };
 		5C2A86CE2E5866BC0055FA9A /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5C2A86CD2E5866BC0055FA9A /* FirebaseAnalyticsCore */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		2BE967122E54E32C007763AE /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		2BE967302E5B3D23007763AE /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		5C9E430B2E544F0300E440F7 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9E43122E544F0400E440F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C9E43182E544F0500E440F7 /* FoodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				5C9E433E2E54579400E440F7 /* SplashView.swift */,
+				2BE967302E5B3D23007763AE /* CustomAlertView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				5C9E433F2E54579400E440F7 /* SplashView.swift in Sources */,
 				5C9E43512E54764700E440F7 /* LoginView.swift in Sources */,
 				2BE967132E54E32C007763AE /* ColorExtensions.swift in Sources */,
+				2BE967312E5B3D23007763AE /* CustomAlertView.swift in Sources */,
 				5CF4097D2E56F9F6002C19DE /* SignUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
