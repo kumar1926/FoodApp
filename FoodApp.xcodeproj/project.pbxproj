@@ -35,6 +35,9 @@
 		5C9E43132E544F0400E440F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9E43122E544F0400E440F7 /* Assets.xcassets */; };
 		5C9E433F2E54579400E440F7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E433E2E54579400E440F7 /* SplashView.swift */; };
 		5C9E43512E54764700E440F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E43502E54764700E440F7 /* LoginView.swift */; };
+		5CCBC05D2E605C77008850B3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBC05C2E605C77008850B3 /* AuthManager.swift */; };
+		5CCBC05F2E605CF3008850B3 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBC05E2E605CF3008850B3 /* ForgotPasswordView.swift */; };
+		5CCBC0632E605DFA008850B3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBC0622E605DFA008850B3 /* HomeView.swift */; };
 		5CF4097D2E56F9F6002C19DE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF4097C2E56F9F6002C19DE /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,9 @@
 		5C9E43222E544F0500E440F7 /* FoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9E433E2E54579400E440F7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		5C9E43502E54764700E440F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5CCBC05C2E605C77008850B3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		5CCBC05E2E605CF3008850B3 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		5CCBC0622E605DFA008850B3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5CF4097C2E56F9F6002C19DE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +142,7 @@
 		2BE967102E54E2B8007763AE /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5CCBC05B2E605C11008850B3 /* Services */,
 				2BE967112E54E2CB007763AE /* Extensions */,
 			);
 			path = Core;
@@ -184,6 +191,7 @@
 		5C9E43372E54556C00E440F7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				5CCBC0602E605DC8008850B3 /* Home */,
 				5C9E434C2E54748E00E440F7 /* Authentication */,
 			);
 			path = Features;
@@ -219,6 +227,31 @@
 			children = (
 				5C9E43502E54764700E440F7 /* LoginView.swift */,
 				5CF4097C2E56F9F6002C19DE /* SignUpView.swift */,
+				5CCBC05E2E605CF3008850B3 /* ForgotPasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CCBC05B2E605C11008850B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5CCBC05C2E605C77008850B3 /* AuthManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5CCBC0602E605DC8008850B3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5CCBC0612E605DE9008850B3 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5CCBC0612E605DE9008850B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CCBC0622E605DFA008850B3 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -395,10 +428,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C9E433F2E54579400E440F7 /* SplashView.swift in Sources */,
+				5CCBC05D2E605C77008850B3 /* AuthManager.swift in Sources */,
 				5C9E43512E54764700E440F7 /* LoginView.swift in Sources */,
 				2BE967132E54E32C007763AE /* ColorExtensions.swift in Sources */,
 				2BE967312E5B3D23007763AE /* CustomAlertView.swift in Sources */,
+				5CCBC0632E605DFA008850B3 /* HomeView.swift in Sources */,
 				5CF4097D2E56F9F6002C19DE /* SignUpView.swift in Sources */,
+				5CCBC05F2E605CF3008850B3 /* ForgotPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
